@@ -12,6 +12,12 @@ class Cliente {
     adicionarTelefone(telefone) {
         this.telefones.add(telefone)
     }
+    colocarMaiusculo(texto){
+        return texto.toUpperCase()
+    }
+    colocarMinusculo(texto){
+        return texto.toLowerCase()
+    }
 }
  
 class Telefone {
@@ -22,6 +28,12 @@ class Telefone {
     formatar() {
         return `DDD: ${this.ddd} Número: ${this.numero}`
     }
+    colocarMaiusculo(texto){
+        return texto.toUpperCase()
+    }
+    colocarMinusculo(texto){
+        return texto.toLowerCase()
+    }
 }
  
 class Endereco {
@@ -30,6 +42,12 @@ class Endereco {
         this.cidade = cidade
         this.rua = rua
         this.numero = numero
+    }
+    colocarMaiusculo(texto){
+        return texto.toUpperCase()
+    }
+    colocarMinusculo(texto){
+        return texto.toLowerCase()
     }
 }
  
@@ -70,6 +88,12 @@ class Empresa {
             descricao += "\n"
         })
         return descricao
+    }
+    colocarMaiusculo(texto){
+        return texto.toUpperCase()
+    }
+    colocarMinusculo(texto){
+        return texto.toLowerCase()
     }
 }
 
